@@ -1,0 +1,21 @@
+<template>
+        <lightning-card title="Static resource carousel Image" icon-name="custom:custom8">
+          <lightning-carousel>
+      
+            <template if:true={players}>
+              <template for:each={players} for:item="cricketer">
+                <lightning-carousel-image 
+
+                    key={cricketer.id} src={cricketer.src}
+                    header={cricketer.header}
+                    discription={cricketer.discription}
+                    href={cricketer.href} alternative-text="text"
+                    class="slds-p-top_xxx-small">
+      
+      
+                </lightning-carousel-image>
+              </template>
+            </template>
+          </lightning-carousel>
+          </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+table,tr{
+    border: solid 1px;
+    border-radius: 2px;
+    padding: auto;
+    background-color: aquamarine;
+    
+}
+th,td{
+    border: solid 1px;
+    border-radius: 2px;
+    padding: auto;
+    background-color: aquamarine;
+    text-align: center;
+}

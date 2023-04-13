@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="data with row selection search key">
+        <!-- show contacts Hide contacts button label change handle -->
+        <lightning-button
+                        variant="brand"
+                        label={buttonLabel}
+                        onclick={clickhandle}>
+
+        </lightning-button>
+        <!-- hide show datatable -->
+        <template if:true={isvisible}>
+        <!-- input searchkey -->
+        <lightning-input   
+                            type="search"
+                            onchange={handleChanged}
+                            label="search"
+                            value={searchkey}>
+       </lightning-input>
+       <div style="height: 200px;">
+       <lightning-datatable
+                                key-field="Id"
+                                data={myData}
+                                columns={myColumns}
+                                onrowselection={rowselectionHandle}>
+
+      </lightning-datatable>
+      </div>
+    </template>
+</lightning-card>
+</template>

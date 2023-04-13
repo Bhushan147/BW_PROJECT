@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Parent LWC Component" icon-name="standard:form">
+        <p  class="slds-text-align_center">
+            count:{countValue}   
+        </p>
+         
+    </lightning-card>
+
+    <!-- call child component -->
+
+    <c-child-component
+                        onsubstract={handleDecrement}
+                        onadd={handleIncrement}>
+
+    </c-child-component>
+
+</template>

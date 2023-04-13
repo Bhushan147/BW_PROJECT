@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Conditional Rendering True|False" icon-name="custom:custom15"></lightning-card>
+    <lightning-button variant='brand'
+                     label={onclickbuttonlabel}
+                    onclick={onclickhandle}>
+</lightning-button>
+
+<template if:true={cardisvisible}>
+    <lightning-card title=" If True|False conditional Card">
+        {mytitle}
+    </lightning-card>
+</template>
+</template>

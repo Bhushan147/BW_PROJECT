@@ -1,0 +1,25 @@
+<template>
+<lightning-card title="combobox with Datatable">
+<lightning-combobox
+                    label="Accounts"
+                    placeholder="select an account"
+                    value={accValues}
+                    options={Options}
+                    onchange={changeHandle}>
+
+</lightning-combobox>
+<template if:true={visibleCard}>
+<lightning-card title="contacts datatable ">
+<div style="height:200px">
+<lightning-datatable
+                key-field="Id"
+                data={conData}
+                columns={conColumns}>
+
+</lightning-datatable>
+
+  </div>
+  </lightning-card>
+  </template>
+  </lightning-card>   
+</template>

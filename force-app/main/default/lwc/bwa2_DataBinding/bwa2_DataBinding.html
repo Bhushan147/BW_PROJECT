@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Data Binding" icon-name="custom:custom10" >
+    <div class="slds-p-around_medium bg-color">
+    <lightning-input label="Enter Your First Name" value={firstname} onchange={callme}></lightning-input>
+    <lightning-input label="Enter Your last name" value={lastname} onchange={showme}></lightning-input>
+    <lightning-input label="Enter Your Mobile Number" value={mobile} onchange={handle}></lightning-input>
+    <p>Personal information<br>
+        firstname={firstname}<br>
+        lastname={lastname}<br>
+        mobile={mobile}
+    </p>
+</div>
+</lightning-card>
+</template>

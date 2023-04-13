@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="wire as a property" icon-name="custom:custom10">
+        <template if:true={contact.data}>
+        <template for:each={contact.data} for:item="cont">
+        <p key={cont.id}>{cont.FirstName}</p>
+       </template>
+    </template>
+    <!-- <template if:true={contact.error}>
+        error
+    </template> -->
+</lightning-card>
+</template>

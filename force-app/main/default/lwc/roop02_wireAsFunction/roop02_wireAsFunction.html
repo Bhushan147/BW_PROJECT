@@ -1,0 +1,11 @@
+<template>
+    <lightning-card icon-name="custom:custom9">
+        <template if:true={myData}></template>
+        <template for:each={myData} for:item="con">
+            <p key={con.id}>firstName:{con.FirstName}</p>
+            <p >LastName:{con.LastName}</p>
+
+        </template>
+    </lightning-card>
+    
+</template>

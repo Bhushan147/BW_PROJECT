@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title='accounts' icon-name="custom:custom10"></lightning-card>
+    <lightning-datatable
+                        key-field="id"
+                        data={myData}
+                        columns={myColumns}    >
+</lightning-datatable>
+<template if:true={isVisible}>
+<lightning-datatable  
+                    key-field='id' 
+                    data={myData2}
+                    columns={myColumns2}>
+             
+
+</lightning-datatable>
+</template>
+</template>

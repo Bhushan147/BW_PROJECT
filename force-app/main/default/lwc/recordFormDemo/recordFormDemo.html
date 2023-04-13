@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="lightning Record Form-Read-only Mode(view Record)" icon-name="custom:custom8">
+        <lightning-record-form 
+                                object-api-name={objectApiName}
+                                columns="2"         
+                                mode="readonly"
+                                fields={fields}
+                                record-id={recordId} >
+    
+            </lightning-record-form>
+        </lightning-card> 
+    
+    <lightning-card title="lightning Record Form-View Mode(view and update Record)" icon-name="custom:custom8">
+    <lightning-record-form 
+                            object-api-name={objectApiName}
+                            columns="2"         
+                            mode="view"
+                            fields={fields}
+                            record-id={recordId} >
+
+        </lightning-record-form>
+    </lightning-card> 
+    
+     <lightning-card title="lightning Record Form-Edit Mode(update Record)" icon-name="custom:custom8">
+    <lightning-record-form 
+                            object-api-name={objectApiName}
+                            columns="2"         
+                            mode="edit"
+                            fields={fields}
+                            record-id={recordId} >
+
+        </lightning-record-form>
+    </lightning-card> 
+    
+    <lightning-card title="lightning Record Form-Default Mode(Create Record)" icon-name="custom:custom8">
+         <lightning-record-form
+                            object-api-name={objectApiName}
+                            columns="2"
+                            layout-type="full">
+
+        </lightning-record-form> 
+   
+    </lightning-card>
+    
+</template>

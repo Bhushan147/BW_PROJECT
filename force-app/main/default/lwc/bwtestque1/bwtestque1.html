@@ -1,0 +1,35 @@
+<!-- 
+1.	     Create lightning web component which display list of account on UI.
+         And when user click on any account then populate another data table 
+         which show related contact list.
+        A.	Account datatable fields: name, rating, industry, ownership
+        B.	Contact datatable fields: first name, last name, E-mail, phone 
+ -->
+<template>
+    <lightning-card 
+                            title="Bw Question 1" 
+                            icon-name="custom:custom10">
+        <lightning-combobox 
+                            label="Select Account " 
+                            placeholder="select"
+                            value={accInputValue} 
+                            options={accOptions}
+                            onchange={changeHandler}>
+
+        </lightning-combobox>
+        <lightning-datatable 
+                            key-field="Id" 
+                            data={accData} 
+                            columns={accCol}>
+
+        </lightning-datatable>
+        <lightning-datatable 
+                            key-field="Id"
+                             data={conData}
+                             columns={conCol}>
+
+        </lightning-datatable>
+
+    </lightning-card>
+
+</template>

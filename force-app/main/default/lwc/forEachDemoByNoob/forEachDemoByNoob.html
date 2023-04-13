@@ -1,0 +1,11 @@
+<template>
+      <lightning-card title="for Each Loop" icon-name="custom:custom10">
+     <template if:true={mydata}>
+      <template for:each={mydata} for:item="lead">
+        <h3 key={lead.Id}>{lead.Name}</h3>
+
+      </template>
+     </template>
+      </lightning-card>
+        
+</template>

@@ -1,0 +1,49 @@
+<template>
+  <lightning-card title="carousel Image" icon-name="custom:custom8" style="height:100px;">
+   
+    <lightning-carousel class="slds-p-around_large slds-m-around_medium">
+     
+      <template if:true={players}>
+        
+        <template for:each={players} for:item="cricketer">
+          
+          <lightning-carousel-image key={cricketer.id} src={cricketer.src} header={cricketer.header}
+            discription={cricketer.discription} href={cricketer.href} alternative-text="text"
+            class="slds-p-around_large slds-m-around_medium">
+          </lightning-carousel-image>
+        
+        </template>
+      
+      </template>
+    
+</lightning-carousel>
+
+    <!-- <lightning-carousel>
+
+      <lightning-carousel-image src="https://st1.latestly.com/wp-content/uploads/2019/09/Rohit-Sharma-784x441.jpg"
+        header="rohit sharma" discription="batter(indian capatain)" href="https://en.wikipedia.org/wiki/Rohit_Sharma"
+        class="slds-p-top_xxx-small">
+
+
+      </lightning-carousel-image>
+
+      <lightning-carousel-image src="https://www.orissapost.com/wp-content/uploads/2020/04/kohli-2.jpg"
+        header="Virat Kohli" discription="batter(indian former capatain)"
+        href="https://en.wikipedia.org/wiki/Virat_Kohli" class="slds-p-top_xxx-small">
+
+
+      </lightning-carousel-image>
+
+      <lightning-carousel-image
+        src="https://resources.pulse.icc-cricket.com/ICC/photo/2022/11/02/e65f05f6-56f8-433e-b897-357a6a8ba285/UoT7ZD3l.jpg"
+        header="Suryakumar Yadav" discription="batter(voice capatain T20)"
+        href="https://en.wikipedia.org/wiki/Suryakumar_Yadav" class="slds-p-top_xxx-small">
+
+
+      </lightning-carousel-image>
+
+    </lightning-carousel> -->
+
+  </lightning-card>
+
+</template>
